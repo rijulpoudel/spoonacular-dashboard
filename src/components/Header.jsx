@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
+
 export default function Header() {
   return (
-    <header style={{ marginBottom: '20px' }}>
-      <h1 style={{ fontSize: '2rem', fontWeight: 'bold' }}>Spoonacular Recipe Dashboard</h1>
-      <p style={{ fontSize: '1rem', color: '#555' }}>
-        Discover, search, and filter healthy recipes from Spoonacular
-      </p>
+    <header>
+      <Link to="/" style={{ textDecoration: 'none' }}>
+        <h1>Delicious Discoveries</h1>
+        <p>Explore, create, and savor healthy recipes from around the world</p>
+      </Link>
     </header>
   );
 }
